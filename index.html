@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main wrapper">
+    <div class="intro">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="trial__cta">
+      <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+    </div>
+    <div class="signup__wrapper">
+      <form id="form" class="form">
+        <div class="form__control">
+          <label for="first-name" class="label">First Name</label>
+          <input type="text" id="firstname" class="form__input" placeholder="First Name" />
+          <p class="error__message"></p>
+        </div>
+        <div class="form__control">
+          <label for="last-name" class="label">Last Name</label>
+          <input type="text" id="lastname" class="form__input" placeholder="Last Name" />
+          <p class="error__message"></p>
+        </div>
+        <div class="form__control">
+          <label for="email" class="label">Email</label>
+          <input type="text" id="email" class="form__input"  placeholder="Email Address" />
+          <p class="error__message"></p>
+        </div>
+        <div class="form__control">
+          <label for="password" class="label">Password</label>
+          <input type="password" id="password" class="form__input"  placeholder="Password" />
+          <p class="error__message"></p>
+        </div>
+        <button class="submit__button" type="submit">Claim your free trial</button>
+      </form>
+      <p class="fine__print">By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Martin Hussey</a>.
+    </p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

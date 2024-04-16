@@ -1,0 +1,219 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkblue: hsl(249, 10%, 26%);
+    --greyblue: hsl(246, 25%, 77%);
+    --fs-16: 1rem;
+}
+
+/* MOBILE 375px */
+/* DESKTOP 1440px */
+/* FONTS */
+/* .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  } */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* UTILITY */
+
+html, body {
+    overflow-x: hidden;
+}
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: hsl(0, 100%, 74%);
+}
+.wrapper {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    width: 100%;
+    text-align: center;
+    margin: 80px auto 50px;
+}
+.intro h1 {
+    font-size: 1.76rem;
+}
+.intro p {
+    padding: 20px 0 0;
+}
+.trial__cta {
+    background-color: var(--blue);
+    padding: 25px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 0 hsla(249, 10%, 26%, 0.25);
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.125rem;
+}
+.trial__cta span {
+    font-weight: 700;
+}
+.signup__wrapper {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--greyblue);
+    padding: 25px;
+}
+.form__control {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+}
+.label {
+    display: none;
+}
+.form__input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 40px;
+    border: 1px solid var(--greyblue);
+    border-radius: 7px;
+    color: var(--darkblue);
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: relative;
+}
+.form__input::placeholder {
+	color: var(--greyblue);
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.form__input:focus {
+	outline: none;
+	border: 2px solid var(--darkblue);
+}
+.form__control.success input {
+	outline: none;
+	border: 2px solid var(--green);
+}
+.form__control.error input {
+	outline: none;
+	border: 2px solid var(--red);
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+}
+.form__control.error .error__message {
+    position: absolute;
+    translate: 0 250%;
+	visibility: visible;
+}
+.error__message {
+    font-size: 1rem;
+	font-weight: bold;
+	float: right;
+	visibility: hidden;
+}
+.error__message.error {
+    visibility: visible;
+}
+.submit__button {
+    background-color: var(--green);
+    border-style: none;
+    border-radius: 10px;
+    padding: 20px 15px;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: .07rem;
+    box-shadow: 0px 5px 0 hsla(120, 98%, 20%, 0.562);
+}
+.submit__button:hover {
+	background-color: rgba(56, 204, 139, 0.7);
+}
+.fine__print {
+    font-size: 0.75rem;
+    padding: 25px 35px 0px;
+    line-height: 1.2rem;
+}
+.fine__print a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 700;
+}
+@media (min-width: 62.5em) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+    .wrapper {
+        width: 90%;
+        max-width: 1100px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .intro {
+        display: grid;
+        grid-column: 1/ span 6;
+        grid-row: 2/ auto;
+        text-align: left;
+        width: 90%;
+        padding: 100px 0;
+        margin: 0;
+    }
+    .intro h1 {
+        font-size: 3rem;
+        padding-bottom: 20px;        
+    }
+    .intro p {
+        font-size: 1rem;
+    }
+    .trial__cta {
+        display: grid;
+        grid-column: 7/ span 6;
+        grid-row-start: 1;
+        padding: 20px;
+    }
+    .signup__wrapper {
+        display: grid;
+        grid-column: 7/ span 6;
+        grid-row: 2/ span 2;
+        padding: 50px;
+    }
+    .fine__print {
+        font-size: 0.65rem;
+    }
+}
