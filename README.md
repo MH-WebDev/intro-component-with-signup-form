@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/MH-WebDev/intro-component-with-signup-form](https://github.com/MH-WebDev/intro-component-with-signup-form)
+- Live Site URL: [https://mh-webdev.github.io/intro-component-with-signup-form/](https://mh-webdev.github.io/intro-component-with-signup-form/)
 
 ### Built with
 
@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@MH-WebDev](https://www.frontendmentor.io/profile/MH-WebDev)
 
