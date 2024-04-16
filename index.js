@@ -29,7 +29,7 @@ const checkRequired = inputArray => {
 		}
 	});
 };
-
+//Formatting of error messages for first/last name
 const getFieldName = input => {
 	return input.charAt(0).toUpperCase() + input.slice(1).replace('n', ' n');
 };
@@ -42,7 +42,7 @@ const checkEmail = input => {
 		showSuccess(input);
 	}
 };
-
+// Email validation
 const isValidEmail = email => {
 	return String(email)
 		.toLowerCase()
@@ -50,7 +50,7 @@ const isValidEmail = email => {
 			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 		);
 };
-
+// Check Password Length
 const checkLength = (input, min, max) => {
  	if (input.value.trim().length < min) {
  		showError(
